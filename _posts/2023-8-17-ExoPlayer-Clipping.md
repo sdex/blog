@@ -1,7 +1,11 @@
 ---
 layout: post
 title: Play a media segment in a loop with ExoPlayer
+categories: [Android,ExoPlayer]
 ---
+
+ExoPlayer provides an easy way to play a selected part of a media that also works for live streams. 
+We consider two ways to achieve it.
 
 I use `ExoPlayer` from [Media3](https://developer.android.com/jetpack/androidx/releases/media3), version `"1.1.1"`:
 
