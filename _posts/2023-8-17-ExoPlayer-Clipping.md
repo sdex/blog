@@ -55,4 +55,5 @@ exoPlayer.setMediaSource(mediaSource)
 
 Note, there is one important difference, `MediaItem.clippingConfiguration` methods take the time in **milliseconds**, whereas `ClippingMediaSource` constructor takes the time in **microseconds**. 1 millisecond is 1000 microseconds. 
 To convert you can use the utility method from the media3 library:
+
 `androidx.media3.common.util.Util.msToUs(timeMs: Long)`
