@@ -5,8 +5,10 @@ categories:
   - Android
   - Media
 ---
-In this article, we look at two ways of adding video fade-in and fade-out transition effects. 
-## FFmpeg
+
+In this article, we look at two ways of adding video fade-in and fade-out transition effects. A fade is a transition that gradually moves to or from an image to or from black. Fades are often used at the beginning/end of videos but it's possible to use crossfade effects between scenes.
+
+**FFmpeg**
 
 Adding a fade effect is quite simple with FFmpeg fade filter:
 
@@ -25,7 +27,7 @@ Add fade-out to the end of the video (assuming the video is 7 seconds long):
 It works like a charm but there are some drawbacks to consider. 
 FFmpeg re-encodes the video and often the output file is quite different from the original, software encoders are much slower than hardware, increased app size, etc. 
 
-## OpenGL texture
+**OpenGL texture**
 
 The idea is simple - draw a black image on the top of the each frame and adjust the image transparency depending on the frame time. 
 To achieve it using the `MediaCodec` we need to:
