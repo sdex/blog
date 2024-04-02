@@ -6,23 +6,26 @@ categories:
   - Media
 ---
 In this article, we look at two ways of adding video fade-in and fade-out transition effects. 
-### FFmpeg
+## FFmpeg
 
 Adding a fade effect is quite simple with FFmpeg fade filter:
-https://ffmpeg.org/ffmpeg-filters.html#fade
+
+[https://ffmpeg.org/ffmpeg-filters.html#fade](https://ffmpeg.org/ffmpeg-filters.html#fade)
 
 We need to set 3 parameters: type (in/out), start time, and duration.
 
 Add fade-in to the beginning of the video:
+
 `fade=t=in:st='0ms':d='2000ms'`
 
 Add fade-out to the end of the video (assuming the video is 7 seconds long):
+
 `fade=t=out:st='5000ms':d='2000ms'`
 
 It works like a charm but there are some drawbacks to consider. 
 FFmpeg re-encodes the video and often the output file is quite different from the original, software encoders are much slower than hardware, increased app size, etc. 
 
-### OpenGL texture
+## OpenGL texture
 
 The idea is simple - draw a black image on the top of the each frame and adjust the image transparency depending on the frame time. 
 To achieve it using the `MediaCodec` we need to:
@@ -79,4 +82,4 @@ transformer.start(videoEditedMediaItem, outputFile.absolutePath)
 
 The result video: 
 
-{{< youtube "x37_Xsrhlw0" >}}
+<iframe width="840" height="473" src="https://www.youtube.com/embed/x37_Xsrhlw0" title="Android: Video processing - Fade effect" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
