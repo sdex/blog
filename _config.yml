@@ -29,7 +29,8 @@ footer-links:
   linkedin: ymysochenko
   pinterest:
   rss: sdex # just type anything here for a working RSS icon
-  twitter: sdexyz
+  twitter:
+  bluesky: sdexyz
   stackoverflow: users/2894324/sdex
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
