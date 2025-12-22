@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Hi! I'm Yuriy - Android developer. 
+Hi! I'm Yurii - Android developer. 
