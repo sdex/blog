@@ -1,3 +1,12 @@
+---
+layout: post
+title: Configure Firejail for Android Studio to run AI agents safely
+categories:
+  - Android
+  - AI
+  - Ubuntu
+---
+
 After reading yet another article about an AI agent wiping a home directory, I finally decided to protect myself. A quick search led me to [Firejail for VS Code](https://softwareengineeringstandard.com/2025/12/15/ai-agents-firejail-sandbox/). Since I use Ubuntu, this is a perfect match.
 
 ![Image]({{ site.baseurl }}/firejail_android.png)
