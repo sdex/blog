@@ -31,7 +31,7 @@ The process is quite simple.
     nano ~/.config/firejail/android-studio.profile
     ```
 
-4. Configure the profile
+4. Configure the profile \
 Paste the following into the file. This whitelists only the necessary directories and blocks everything else by default.
 
     ```bash
@@ -55,14 +55,14 @@ Paste the following into the file. This whitelists only the necessary directorie
     include /etc/firejail/whitelist-runuser-common.inc
     ```
 
-5. Create an alias to run it in safe mode
+5. Create an alias to run it in safe mode \
 Add this to your `~/.bashrc` to launch it quickly from the terminal:
 
     ```bash
     alias studio-safe='nohup firejail --profile=~/.config/firejail/android-studio.profile ~/android/as/android-studio-canary/bin/studio.sh > /dev/null 2>&1 &'
     ```
 
-6. Create a desktop entry 
+6. Create a desktop entry \
 To launch from your app menu, create `~/.local/share/applications/android-studio-safe.desktop`:
 
     ```bash
