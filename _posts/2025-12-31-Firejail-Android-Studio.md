@@ -9,7 +9,7 @@ categories:
 
 After reading yet another article about an AI agent wiping a home directory, I finally decided to protect myself. A quick search led me to [Firejail for VS Code](https://softwareengineeringstandard.com/2025/12/15/ai-agents-firejail-sandbox/). Since I use Ubuntu, this is a perfect match.
 
-![Image]({{ site.baseurl }}/firejail_android.png)
+![Image]({{ site.baseurl }}/images/firejail_android.png)
 
 The process is quite simple. 
 
