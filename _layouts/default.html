@@ -5,7 +5,7 @@
     {% seo title=false %}
     {% include meta.html %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ 'assets/style.css' | relative_url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
@@ -28,10 +28,10 @@
             </div>
 
             <nav>
-              <a href="{{ site.baseurl }}/">Home</a>
-              <a href="{{ site.baseurl }}/search">Search</a>
-              <a href="{{ site.baseurl }}/about">About</a>
-              <a href="{{ site.baseurl }}/archive">Archive</a>
+              <a href="{{ '/' | relative_url }}">Home</a>
+              <a href="{{ 'search' | relative_url }}">Search</a>
+              <a href="{{ 'about' | relative_url }}">About</a>
+              <a href="{{ 'archive' | relative_url }}">Archive</a>
             </nav>
           </header>
         </div>
